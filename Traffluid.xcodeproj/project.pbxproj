@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0502EB71AEFFC5700F73C44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0502EB61AEFFC5700F73C44 /* main.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		D0502EBE1AEFFCD100F73C44 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0502EBD1AEFFCD100F73C44 /* OpenGL.framework */; };
+		D0502EC01AEFFCD600F73C44 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0502EBF1AEFFCD600F73C44 /* GLUT.framework */; };
+		D0502EC31AF0034700F73C44 /* TFCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0502EC21AF0034700F73C44 /* TFCamera.m */; };
+		D0502EC51AF003A500F73C44 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0502EC41AF003A500F73C44 /* GLKit.framework */; };
+		D08092F21B0CEA7000E9F0B0 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08092F11B0CEA7000E9F0B0 /* OpenCL.framework */; };
+		D08092FC1B0D61FD00E9F0B0 /* ECEOpenCL.mm in Sources */ = {isa = PBXBuildFile; fileRef = D08092FB1B0D61FD00E9F0B0 /* ECEOpenCL.mm */; };
+		D08092FF1B0D674B00E9F0B0 /* HelloWorld.cl in Sources */ = {isa = PBXBuildFile; fileRef = D08092FE1B0D674B00E9F0B0 /* HelloWorld.cl */; };
+		D0CC29DC1AF2D29C00029CC4 /* ECEAxisAlignedPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29D31AF2D29C00029CC4 /* ECEAxisAlignedPlane.m */; };
+		D0CC29DD1AF2D29C00029CC4 /* ECECube.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29D51AF2D29C00029CC4 /* ECECube.m */; };
+		D0CC29DE1AF2D29C00029CC4 /* ECEOpendGlassBox.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29D71AF2D29C00029CC4 /* ECEOpendGlassBox.m */; };
+		D0CC29DF1AF2D29C00029CC4 /* ECESimplifiedCube.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29D91AF2D29C00029CC4 /* ECESimplifiedCube.m */; };
+		D0CC29E01AF2D29C00029CC4 /* ECESphere.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29DB1AF2D29C00029CC4 /* ECESphere.m */; };
+		D0CC29E41AF2D2B900029CC4 /* ECEShape.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29E31AF2D2B900029CC4 /* ECEShape.m */; };
+		D0CC29E71AF2D2F000029CC4 /* ECEGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29E61AF2D2F000029CC4 /* ECEGlobal.m */; };
+		D0CC29EA1AF2D34100029CC4 /* ECEGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29E91AF2D34100029CC4 /* ECEGrid.m */; };
+		D0CC2A051AF2E13100029CC4 /* ECECollisionOOBox.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29EE1AF2E13100029CC4 /* ECECollisionOOBox.m */; };
+		D0CC2A061AF2E13100029CC4 /* ECECollisionShape.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29F01AF2E13100029CC4 /* ECECollisionShape.m */; };
+		D0CC2A071AF2E13100029CC4 /* ECEFluidMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29F21AF2E13100029CC4 /* ECEFluidMaterial.m */; };
+		D0CC2A081AF2E13100029CC4 /* ECEKernels.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29F41AF2E13100029CC4 /* ECEKernels.m */; };
+		D0CC2A091AF2E13100029CC4 /* ECELeapFrogIntegrator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29F61AF2E13100029CC4 /* ECELeapFrogIntegrator.m */; };
+		D0CC2A0A1AF2E13100029CC4 /* ECEParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29F81AF2E13100029CC4 /* ECEParticle.m */; };
+		D0CC2A0B1AF2E13100029CC4 /* ECEParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29FA1AF2E13100029CC4 /* ECEParticleSystem.m */; };
+		D0CC2A0C1AF2E13100029CC4 /* ECEParticleSystemSPH.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29FC1AF2E13100029CC4 /* ECEParticleSystemSPH.m */; };
+		D0CC2A0D1AF2E13100029CC4 /* ECETrafficFluidMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC29FE1AF2E13100029CC4 /* ECETrafficFluidMaterial.m */; };
+		D0CC2A0E1AF2E13100029CC4 /* ECETrafficParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC2A001AF2E13100029CC4 /* ECETrafficParticle.m */; };
+		D0CC2A0F1AF2E13100029CC4 /* ECETrafficParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC2A021AF2E13100029CC4 /* ECETrafficParticleSystem.m */; };
+		D0CC2A101AF2E13100029CC4 /* ECEWaterFluidMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC2A041AF2E13100029CC4 /* ECEWaterFluidMaterial.m */; };
+		D0CC2A231AF2E26A00029CC4 /* ECEGridHashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC2A1E1AF2E26A00029CC4 /* ECEGridHashTable.m */; };
+		D0CC2A241AF2E26A00029CC4 /* ECEParticlesGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC2A201AF2E26A00029CC4 /* ECEParticlesGrid.m */; };
+		D0CC2A251AF2E26A00029CC4 /* ECEParticlesKdTree.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC2A221AF2E26A00029CC4 /* ECEParticlesKdTree.m */; };
+		D0CC2A2B1AF2E29A00029CC4 /* ECEParticlesKdTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CC2A2A1AF2E29A00029CC4 /* ECEParticlesKdTreeNode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0502EB11AEFFC5700F73C44 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D0502EB31AEFFC5700F73C44 /* Traffluid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Traffluid; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0502EB61AEFFC5700F73C44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0502EBD1AEFFCD100F73C44 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D0502EBF1AEFFCD600F73C44 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		D0502EC11AF0034700F73C44 /* TFCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFCamera.h; sourceTree = "<group>"; };
+		D0502EC21AF0034700F73C44 /* TFCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFCamera.m; sourceTree = "<group>"; };
+		D0502EC41AF003A500F73C44 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D08092F11B0CEA7000E9F0B0 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		D08092FA1B0D61FD00E9F0B0 /* ECEOpenCL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEOpenCL.h; sourceTree = "<group>"; };
+		D08092FB1B0D61FD00E9F0B0 /* ECEOpenCL.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ECEOpenCL.mm; sourceTree = "<group>"; };
+		D08092FE1B0D674B00E9F0B0 /* HelloWorld.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = HelloWorld.cl; sourceTree = "<group>"; };
+		D0CC29D21AF2D29C00029CC4 /* ECEAxisAlignedPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEAxisAlignedPlane.h; sourceTree = "<group>"; };
+		D0CC29D31AF2D29C00029CC4 /* ECEAxisAlignedPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEAxisAlignedPlane.m; sourceTree = "<group>"; };
+		D0CC29D41AF2D29C00029CC4 /* ECECube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECECube.h; sourceTree = "<group>"; };
+		D0CC29D51AF2D29C00029CC4 /* ECECube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECECube.m; sourceTree = "<group>"; };
+		D0CC29D61AF2D29C00029CC4 /* ECEOpendGlassBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEOpendGlassBox.h; sourceTree = "<group>"; };
+		D0CC29D71AF2D29C00029CC4 /* ECEOpendGlassBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEOpendGlassBox.m; sourceTree = "<group>"; };
+		D0CC29D81AF2D29C00029CC4 /* ECESimplifiedCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECESimplifiedCube.h; sourceTree = "<group>"; };
+		D0CC29D91AF2D29C00029CC4 /* ECESimplifiedCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECESimplifiedCube.m; sourceTree = "<group>"; };
+		D0CC29DA1AF2D29C00029CC4 /* ECESphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECESphere.h; sourceTree = "<group>"; };
+		D0CC29DB1AF2D29C00029CC4 /* ECESphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECESphere.m; sourceTree = "<group>"; };
+		D0CC29E21AF2D2B900029CC4 /* ECEShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEShape.h; sourceTree = "<group>"; };
+		D0CC29E31AF2D2B900029CC4 /* ECEShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEShape.m; sourceTree = "<group>"; };
+		D0CC29E51AF2D2F000029CC4 /* ECEGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEGlobal.h; sourceTree = "<group>"; };
+		D0CC29E61AF2D2F000029CC4 /* ECEGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEGlobal.m; sourceTree = "<group>"; };
+		D0CC29E81AF2D34100029CC4 /* ECEGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEGrid.h; sourceTree = "<group>"; };
+		D0CC29E91AF2D34100029CC4 /* ECEGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEGrid.m; sourceTree = "<group>"; };
+		D0CC29ED1AF2E13100029CC4 /* ECECollisionOOBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECECollisionOOBox.h; sourceTree = "<group>"; };
+		D0CC29EE1AF2E13100029CC4 /* ECECollisionOOBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECECollisionOOBox.m; sourceTree = "<group>"; };
+		D0CC29EF1AF2E13100029CC4 /* ECECollisionShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECECollisionShape.h; sourceTree = "<group>"; };
+		D0CC29F01AF2E13100029CC4 /* ECECollisionShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECECollisionShape.m; sourceTree = "<group>"; };
+		D0CC29F11AF2E13100029CC4 /* ECEFluidMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEFluidMaterial.h; sourceTree = "<group>"; };
+		D0CC29F21AF2E13100029CC4 /* ECEFluidMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEFluidMaterial.m; sourceTree = "<group>"; };
+		D0CC29F31AF2E13100029CC4 /* ECEKernels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEKernels.h; sourceTree = "<group>"; };
+		D0CC29F41AF2E13100029CC4 /* ECEKernels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEKernels.m; sourceTree = "<group>"; };
+		D0CC29F51AF2E13100029CC4 /* ECELeapFrogIntegrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECELeapFrogIntegrator.h; sourceTree = "<group>"; };
+		D0CC29F61AF2E13100029CC4 /* ECELeapFrogIntegrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECELeapFrogIntegrator.m; sourceTree = "<group>"; };
+		D0CC29F71AF2E13100029CC4 /* ECEParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEParticle.h; sourceTree = "<group>"; };
+		D0CC29F81AF2E13100029CC4 /* ECEParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEParticle.m; sourceTree = "<group>"; };
+		D0CC29F91AF2E13100029CC4 /* ECEParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEParticleSystem.h; sourceTree = "<group>"; };
+		D0CC29FA1AF2E13100029CC4 /* ECEParticleSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEParticleSystem.m; sourceTree = "<group>"; };
+		D0CC29FB1AF2E13100029CC4 /* ECEParticleSystemSPH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEParticleSystemSPH.h; sourceTree = "<group>"; };
+		D0CC29FC1AF2E13100029CC4 /* ECEParticleSystemSPH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEParticleSystemSPH.m; sourceTree = "<group>"; };
+		D0CC29FD1AF2E13100029CC4 /* ECETrafficFluidMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECETrafficFluidMaterial.h; sourceTree = "<group>"; };
+		D0CC29FE1AF2E13100029CC4 /* ECETrafficFluidMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECETrafficFluidMaterial.m; sourceTree = "<group>"; };
+		D0CC29FF1AF2E13100029CC4 /* ECETrafficParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECETrafficParticle.h; sourceTree = "<group>"; };
+		D0CC2A001AF2E13100029CC4 /* ECETrafficParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECETrafficParticle.m; sourceTree = "<group>"; };
+		D0CC2A011AF2E13100029CC4 /* ECETrafficParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECETrafficParticleSystem.h; sourceTree = "<group>"; };
+		D0CC2A021AF2E13100029CC4 /* ECETrafficParticleSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECETrafficParticleSystem.m; sourceTree = "<group>"; };
+		D0CC2A031AF2E13100029CC4 /* ECEWaterFluidMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEWaterFluidMaterial.h; sourceTree = "<group>"; };
+		D0CC2A041AF2E13100029CC4 /* ECEWaterFluidMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEWaterFluidMaterial.m; sourceTree = "<group>"; };
+		D0CC2A1D1AF2E26A00029CC4 /* ECEGridHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEGridHashTable.h; sourceTree = "<group>"; };
+		D0CC2A1E1AF2E26A00029CC4 /* ECEGridHashTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEGridHashTable.m; sourceTree = "<group>"; };
+		D0CC2A1F1AF2E26A00029CC4 /* ECEParticlesGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEParticlesGrid.h; sourceTree = "<group>"; };
+		D0CC2A201AF2E26A00029CC4 /* ECEParticlesGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEParticlesGrid.m; sourceTree = "<group>"; };
+		D0CC2A211AF2E26A00029CC4 /* ECEParticlesKdTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEParticlesKdTree.h; sourceTree = "<group>"; };
+		D0CC2A221AF2E26A00029CC4 /* ECEParticlesKdTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEParticlesKdTree.m; sourceTree = "<group>"; };
+		D0CC2A291AF2E29A00029CC4 /* ECEParticlesKdTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECEParticlesKdTreeNode.h; sourceTree = "<group>"; };
+		D0CC2A2A1AF2E29A00029CC4 /* ECEParticlesKdTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECEParticlesKdTreeNode.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0502EB01AEFFC5700F73C44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08092F21B0CEA7000E9F0B0 /* OpenCL.framework in Frameworks */,
+				D0502EC51AF003A500F73C44 /* GLKit.framework in Frameworks */,
+				D0502EC01AEFFCD600F73C44 /* GLUT.framework in Frameworks */,
+				D0502EBE1AEFFCD100F73C44 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D006EA1D1AF0355100DEC39E /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				D0502EC11AF0034700F73C44 /* TFCamera.h */,
+				D0502EC21AF0034700F73C44 /* TFCamera.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		D0502EAA1AEFFC5700F73C44 = {
+			isa = PBXGroup;
+			children = (
+				D08092F11B0CEA7000E9F0B0 /* OpenCL.framework */,
+				D0502EBF1AEFFCD600F73C44 /* GLUT.framework */,
+				D0502EBD1AEFFCD100F73C44 /* OpenGL.framework */,
+				D0502EC41AF003A500F73C44 /* GLKit.framework */,
+				D0502EB51AEFFC5700F73C44 /* Traffluid */,
+				D0502EB41AEFFC5700F73C44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0502EB41AEFFC5700F73C44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0502EB31AEFFC5700F73C44 /* Traffluid */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0502EB51AEFFC5700F73C44 /* Traffluid */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC29EB1AF2D66600029CC4 /* Objects */,
+				D0502EB61AEFFC5700F73C44 /* main.m */,
+			);
+			path = Traffluid;
+			sourceTree = "<group>";
+		};
+		D08092F91B0D61DF00E9F0B0 /* OpenCL */ = {
+			isa = PBXGroup;
+			children = (
+				D08092FD1B0D670400E9F0B0 /* OpenCL C Kernels */,
+				D08092FA1B0D61FD00E9F0B0 /* ECEOpenCL.h */,
+				D08092FB1B0D61FD00E9F0B0 /* ECEOpenCL.mm */,
+			);
+			name = OpenCL;
+			sourceTree = "<group>";
+		};
+		D08092FD1B0D670400E9F0B0 /* OpenCL C Kernels */ = {
+			isa = PBXGroup;
+			children = (
+				D08092FE1B0D674B00E9F0B0 /* HelloWorld.cl */,
+			);
+			name = "OpenCL C Kernels";
+			sourceTree = "<group>";
+		};
+		D0CC29D11AF2D29400029CC4 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC29E11AF2D29F00029CC4 /* Parent */,
+				D0CC29D21AF2D29C00029CC4 /* ECEAxisAlignedPlane.h */,
+				D0CC29D31AF2D29C00029CC4 /* ECEAxisAlignedPlane.m */,
+				D0CC29D41AF2D29C00029CC4 /* ECECube.h */,
+				D0CC29D51AF2D29C00029CC4 /* ECECube.m */,
+				D0CC29D61AF2D29C00029CC4 /* ECEOpendGlassBox.h */,
+				D0CC29D71AF2D29C00029CC4 /* ECEOpendGlassBox.m */,
+				D0CC29D81AF2D29C00029CC4 /* ECESimplifiedCube.h */,
+				D0CC29D91AF2D29C00029CC4 /* ECESimplifiedCube.m */,
+				D0CC29DA1AF2D29C00029CC4 /* ECESphere.h */,
+				D0CC29DB1AF2D29C00029CC4 /* ECESphere.m */,
+				D0CC29E81AF2D34100029CC4 /* ECEGrid.h */,
+				D0CC29E91AF2D34100029CC4 /* ECEGrid.m */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		D0CC29E11AF2D29F00029CC4 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC29E21AF2D2B900029CC4 /* ECEShape.h */,
+				D0CC29E31AF2D2B900029CC4 /* ECEShape.m */,
+			);
+			name = Parent;
+			sourceTree = "<group>";
+		};
+		D0CC29EB1AF2D66600029CC4 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D08092F91B0D61DF00E9F0B0 /* OpenCL */,
+				D006EA1D1AF0355100DEC39E /* Camera */,
+				D0CC29D11AF2D29400029CC4 /* Shapes */,
+				D0CC2A1C1AF2E23000029CC4 /* Particle Systems */,
+				D0CC29E51AF2D2F000029CC4 /* ECEGlobal.h */,
+				D0CC29E61AF2D2F000029CC4 /* ECEGlobal.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		D0CC29EC1AF2E11D00029CC4 /* Generic Particle System */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC2A111AF2E13B00029CC4 /* Collisions */,
+				D0CC2A121AF2E14900029CC4 /* Integrators */,
+				D0CC2A131AF2E14F00029CC4 /* Kernels */,
+				D0CC2A141AF2E16C00029CC4 /* Fluid Material */,
+				D0CC2A151AF2E17500029CC4 /* Grids */,
+				D0CC2A161AF2E18200029CC4 /* Particle */,
+				D0CC29F91AF2E13100029CC4 /* ECEParticleSystem.h */,
+				D0CC29FA1AF2E13100029CC4 /* ECEParticleSystem.m */,
+			);
+			name = "Generic Particle System";
+			sourceTree = "<group>";
+		};
+		D0CC2A111AF2E13B00029CC4 /* Collisions */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC29ED1AF2E13100029CC4 /* ECECollisionOOBox.h */,
+				D0CC29EE1AF2E13100029CC4 /* ECECollisionOOBox.m */,
+				D0CC29EF1AF2E13100029CC4 /* ECECollisionShape.h */,
+				D0CC29F01AF2E13100029CC4 /* ECECollisionShape.m */,
+			);
+			name = Collisions;
+			sourceTree = "<group>";
+		};
+		D0CC2A121AF2E14900029CC4 /* Integrators */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC29F51AF2E13100029CC4 /* ECELeapFrogIntegrator.h */,
+				D0CC29F61AF2E13100029CC4 /* ECELeapFrogIntegrator.m */,
+			);
+			name = Integrators;
+			sourceTree = "<group>";
+		};
+		D0CC2A131AF2E14F00029CC4 /* Kernels */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC29F31AF2E13100029CC4 /* ECEKernels.h */,
+				D0CC29F41AF2E13100029CC4 /* ECEKernels.m */,
+			);
+			name = Kernels;
+			sourceTree = "<group>";
+		};
+		D0CC2A141AF2E16C00029CC4 /* Fluid Material */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC29F11AF2E13100029CC4 /* ECEFluidMaterial.h */,
+				D0CC29F21AF2E13100029CC4 /* ECEFluidMaterial.m */,
+			);
+			name = "Fluid Material";
+			sourceTree = "<group>";
+		};
+		D0CC2A151AF2E17500029CC4 /* Grids */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC2A261AF2E27300029CC4 /* Parent */,
+				D0CC2A271AF2E27900029CC4 /* Kd-Tree */,
+				D0CC2A281AF2E27D00029CC4 /* HashTable */,
+			);
+			name = Grids;
+			sourceTree = "<group>";
+		};
+		D0CC2A161AF2E18200029CC4 /* Particle */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC29F71AF2E13100029CC4 /* ECEParticle.h */,
+				D0CC29F81AF2E13100029CC4 /* ECEParticle.m */,
+			);
+			name = Particle;
+			sourceTree = "<group>";
+		};
+		D0CC2A171AF2E19100029CC4 /* SPH */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC2A181AF2E19B00029CC4 /* Fluid Materials */,
+				D0CC29FB1AF2E13100029CC4 /* ECEParticleSystemSPH.h */,
+				D0CC29FC1AF2E13100029CC4 /* ECEParticleSystemSPH.m */,
+			);
+			name = SPH;
+			sourceTree = "<group>";
+		};
+		D0CC2A181AF2E19B00029CC4 /* Fluid Materials */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC2A031AF2E13100029CC4 /* ECEWaterFluidMaterial.h */,
+				D0CC2A041AF2E13100029CC4 /* ECEWaterFluidMaterial.m */,
+			);
+			name = "Fluid Materials";
+			sourceTree = "<group>";
+		};
+		D0CC2A191AF2E1CB00029CC4 /* Traffic System */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC2A1A1AF2E1D400029CC4 /* Particle */,
+				D0CC2A1B1AF2E1DA00029CC4 /* Fluid Material */,
+				D0CC2A011AF2E13100029CC4 /* ECETrafficParticleSystem.h */,
+				D0CC2A021AF2E13100029CC4 /* ECETrafficParticleSystem.m */,
+			);
+			name = "Traffic System";
+			sourceTree = "<group>";
+		};
+		D0CC2A1A1AF2E1D400029CC4 /* Particle */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC29FF1AF2E13100029CC4 /* ECETrafficParticle.h */,
+				D0CC2A001AF2E13100029CC4 /* ECETrafficParticle.m */,
+			);
+			name = Particle;
+			sourceTree = "<group>";
+		};
+		D0CC2A1B1AF2E1DA00029CC4 /* Fluid Material */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC29FD1AF2E13100029CC4 /* ECETrafficFluidMaterial.h */,
+				D0CC29FE1AF2E13100029CC4 /* ECETrafficFluidMaterial.m */,
+			);
+			name = "Fluid Material";
+			sourceTree = "<group>";
+		};
+		D0CC2A1C1AF2E23000029CC4 /* Particle Systems */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC29EC1AF2E11D00029CC4 /* Generic Particle System */,
+				D0CC2A171AF2E19100029CC4 /* SPH */,
+				D0CC2A191AF2E1CB00029CC4 /* Traffic System */,
+			);
+			name = "Particle Systems";
+			sourceTree = "<group>";
+		};
+		D0CC2A261AF2E27300029CC4 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC2A1F1AF2E26A00029CC4 /* ECEParticlesGrid.h */,
+				D0CC2A201AF2E26A00029CC4 /* ECEParticlesGrid.m */,
+			);
+			name = Parent;
+			sourceTree = "<group>";
+		};
+		D0CC2A271AF2E27900029CC4 /* Kd-Tree */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC2A2C1AF2E29C00029CC4 /* Node */,
+				D0CC2A211AF2E26A00029CC4 /* ECEParticlesKdTree.h */,
+				D0CC2A221AF2E26A00029CC4 /* ECEParticlesKdTree.m */,
+			);
+			name = "Kd-Tree";
+			sourceTree = "<group>";
+		};
+		D0CC2A281AF2E27D00029CC4 /* HashTable */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC2A1D1AF2E26A00029CC4 /* ECEGridHashTable.h */,
+				D0CC2A1E1AF2E26A00029CC4 /* ECEGridHashTable.m */,
+			);
+			name = HashTable;
+			sourceTree = "<group>";
+		};
+		D0CC2A2C1AF2E29C00029CC4 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC2A291AF2E29A00029CC4 /* ECEParticlesKdTreeNode.h */,
+				D0CC2A2A1AF2E29A00029CC4 /* ECEParticlesKdTreeNode.m */,
+			);
+			name = Node;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0502EB21AEFFC5700F73C44 /* Traffluid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0502EBA1AEFFC5700F73C44 /* Build configuration list for PBXNativeTarget "Traffluid" */;
+			buildPhases = (
+				D0502EAF1AEFFC5700F73C44 /* Sources */,
+				D0502EB01AEFFC5700F73C44 /* Frameworks */,
+				D0502EB11AEFFC5700F73C44 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Traffluid;
+			productName = Traffluid;
+			productReference = D0502EB31AEFFC5700F73C44 /* Traffluid */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0502EAB1AEFFC5700F73C44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Jorge R. Moukel";
+				TargetAttributes = {
+					D0502EB21AEFFC5700F73C44 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = D0502EAE1AEFFC5700F73C44 /* Build configuration list for PBXProject "Traffluid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0502EAA1AEFFC5700F73C44;
+			productRefGroup = D0502EB41AEFFC5700F73C44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0502EB21AEFFC5700F73C44 /* Traffluid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0502EAF1AEFFC5700F73C44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08092FC1B0D61FD00E9F0B0 /* ECEOpenCL.mm in Sources */,
+				D0CC2A061AF2E13100029CC4 /* ECECollisionShape.m in Sources */,
+				D0CC29DE1AF2D29C00029CC4 /* ECEOpendGlassBox.m in Sources */,
+				D0CC2A0F1AF2E13100029CC4 /* ECETrafficParticleSystem.m in Sources */,
+				D0CC2A081AF2E13100029CC4 /* ECEKernels.m in Sources */,
+				D0CC29DD1AF2D29C00029CC4 /* ECECube.m in Sources */,
+				D0CC2A051AF2E13100029CC4 /* ECECollisionOOBox.m in Sources */,
+				D0CC29DF1AF2D29C00029CC4 /* ECESimplifiedCube.m in Sources */,
+				D0CC2A0C1AF2E13100029CC4 /* ECEParticleSystemSPH.m in Sources */,
+				D0CC2A0D1AF2E13100029CC4 /* ECETrafficFluidMaterial.m in Sources */,
+				D0CC29E41AF2D2B900029CC4 /* ECEShape.m in Sources */,
+				D0502EC31AF0034700F73C44 /* TFCamera.m in Sources */,
+				D0CC29EA1AF2D34100029CC4 /* ECEGrid.m in Sources */,
+				D0CC2A231AF2E26A00029CC4 /* ECEGridHashTable.m in Sources */,
+				D0CC2A251AF2E26A00029CC4 /* ECEParticlesKdTree.m in Sources */,
+				D0CC2A0A1AF2E13100029CC4 /* ECEParticle.m in Sources */,
+				D0CC2A101AF2E13100029CC4 /* ECEWaterFluidMaterial.m in Sources */,
+				D0CC2A241AF2E26A00029CC4 /* ECEParticlesGrid.m in Sources */,
+				D08092FF1B0D674B00E9F0B0 /* HelloWorld.cl in Sources */,
+				D0CC2A071AF2E13100029CC4 /* ECEFluidMaterial.m in Sources */,
+				D0CC2A2B1AF2E29A00029CC4 /* ECEParticlesKdTreeNode.m in Sources */,
+				D0CC2A0B1AF2E13100029CC4 /* ECEParticleSystem.m in Sources */,
+				D0CC29DC1AF2D29C00029CC4 /* ECEAxisAlignedPlane.m in Sources */,
+				D0CC2A0E1AF2E13100029CC4 /* ECETrafficParticle.m in Sources */,
+				D0CC29E01AF2D29C00029CC4 /* ECESphere.m in Sources */,
+				D0CC2A091AF2E13100029CC4 /* ECELeapFrogIntegrator.m in Sources */,
+				D0CC29E71AF2D2F000029CC4 /* ECEGlobal.m in Sources */,
+				D0502EB71AEFFC5700F73C44 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0502EB81AEFFC5700F73C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D0502EB91AEFFC5700F73C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D0502EBB1AEFFC5700F73C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GLIBCXX_DEBUG=1",
+					"GLIBCXXDEBUGPEDANTIC=1",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0502EBC1AEFFC5700F73C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GLIBCXX_DEBUG=1",
+					"GLIBCXXDEBUGPEDANTIC=1",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0502EAE1AEFFC5700F73C44 /* Build configuration list for PBXProject "Traffluid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0502EB81AEFFC5700F73C44 /* Debug */,
+				D0502EB91AEFFC5700F73C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0502EBA1AEFFC5700F73C44 /* Build configuration list for PBXNativeTarget "Traffluid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0502EBB1AEFFC5700F73C44 /* Debug */,
+				D0502EBC1AEFFC5700F73C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0502EAB1AEFFC5700F73C44 /* Project object */;
+}
